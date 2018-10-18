@@ -12,7 +12,20 @@
 		DC19B1E72176BC4C002315F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC19B1E52176BC4C002315F7 /* Main.storyboard */; };
 		DC19B1E92176BC4D002315F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC19B1E82176BC4D002315F7 /* Assets.xcassets */; };
 		DC19B1EC2176BC4D002315F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC19B1EA2176BC4D002315F7 /* LaunchScreen.storyboard */; };
+		DC19B1F42176BC70002315F7 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19B1F32176BC70002315F7 /* StateMachine.swift */; };
+		DC19B1FC2177CB79002315F7 /* StateMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19B1FB2177CB79002315F7 /* StateMachineTests.swift */; };
+		DCCC40752179207700D53D7D /* StateMachine.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCCC40742179207600D53D7D /* StateMachine.pdf */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC19B1FE2177CB79002315F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC19B1D62176BC4C002315F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC19B1DD2176BC4C002315F7;
+			remoteInfo = StateMachine;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DC19B1DE2176BC4C002315F7 /* StateMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +35,22 @@
 		DC19B1E82176BC4D002315F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC19B1EB2176BC4D002315F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC19B1ED2176BC4D002315F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC19B1F32176BC70002315F7 /* StateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
+		DC19B1F92177CB78002315F7 /* StateMachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateMachineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC19B1FB2177CB79002315F7 /* StateMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachineTests.swift; sourceTree = "<group>"; };
+		DC19B1FD2177CB79002315F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCCC40742179207600D53D7D /* StateMachine.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = StateMachine.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DC19B1DB2176BC4C002315F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC19B1F62177CB78002315F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				DC19B1E02176BC4C002315F7 /* StateMachine */,
+				DC19B1FA2177CB79002315F7 /* StateMachineTests */,
 				DC19B1DF2176BC4C002315F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				DC19B1DE2176BC4C002315F7 /* StateMachine.app */,
+				DC19B1F92177CB78002315F7 /* StateMachineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,8 +87,19 @@
 				DC19B1E82176BC4D002315F7 /* Assets.xcassets */,
 				DC19B1EA2176BC4D002315F7 /* LaunchScreen.storyboard */,
 				DC19B1ED2176BC4D002315F7 /* Info.plist */,
+				DC19B1F32176BC70002315F7 /* StateMachine.swift */,
+				DCCC40742179207600D53D7D /* StateMachine.pdf */,
 			);
 			path = StateMachine;
+			sourceTree = "<group>";
+		};
+		DC19B1FA2177CB79002315F7 /* StateMachineTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC19B1FB2177CB79002315F7 /* StateMachineTests.swift */,
+				DC19B1FD2177CB79002315F7 /* Info.plist */,
+			);
+			path = StateMachineTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +122,24 @@
 			productReference = DC19B1DE2176BC4C002315F7 /* StateMachine.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DC19B1F82177CB78002315F7 /* StateMachineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC19B2002177CB79002315F7 /* Build configuration list for PBXNativeTarget "StateMachineTests" */;
+			buildPhases = (
+				DC19B1F52177CB78002315F7 /* Sources */,
+				DC19B1F62177CB78002315F7 /* Frameworks */,
+				DC19B1F72177CB78002315F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC19B1FF2177CB79002315F7 /* PBXTargetDependency */,
+			);
+			name = StateMachineTests;
+			productName = StateMachineTests;
+			productReference = DC19B1F92177CB78002315F7 /* StateMachineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +152,10 @@
 				TargetAttributes = {
 					DC19B1DD2176BC4C002315F7 = {
 						CreatedOnToolsVersion = 10.0;
+					};
+					DC19B1F82177CB78002315F7 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = DC19B1DD2176BC4C002315F7;
 					};
 				};
 			};
@@ -113,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				DC19B1DD2176BC4C002315F7 /* StateMachine */,
+				DC19B1F82177CB78002315F7 /* StateMachineTests */,
 			);
 		};
 /* End PBXProject section */
@@ -124,7 +185,15 @@
 			files = (
 				DC19B1EC2176BC4D002315F7 /* LaunchScreen.storyboard in Resources */,
 				DC19B1E92176BC4D002315F7 /* Assets.xcassets in Resources */,
+				DCCC40752179207700D53D7D /* StateMachine.pdf in Resources */,
 				DC19B1E72176BC4C002315F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC19B1F72177CB78002315F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,11 +205,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC19B1E42176BC4C002315F7 /* ViewController.swift in Sources */,
+				DC19B1F42176BC70002315F7 /* StateMachine.swift in Sources */,
 				DC19B1E22176BC4C002315F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC19B1F52177CB78002315F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC19B1FC2177CB79002315F7 /* StateMachineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC19B1FF2177CB79002315F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC19B1DD2176BC4C002315F7 /* StateMachine */;
+			targetProxy = DC19B1FE2177CB79002315F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DC19B1E52176BC4C002315F7 /* Main.storyboard */ = {
@@ -314,6 +400,46 @@
 			};
 			name = Release;
 		};
+		DC19B2012177CB79002315F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UVHFXZWG47;
+				INFOPLIST_FILE = StateMachineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.synthus.StateMachineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StateMachine.app/StateMachine";
+			};
+			name = Debug;
+		};
+		DC19B2022177CB79002315F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UVHFXZWG47;
+				INFOPLIST_FILE = StateMachineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.synthus.StateMachineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StateMachine.app/StateMachine";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +457,15 @@
 			buildConfigurations = (
 				DC19B1F12176BC4D002315F7 /* Debug */,
 				DC19B1F22176BC4D002315F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC19B2002177CB79002315F7 /* Build configuration list for PBXNativeTarget "StateMachineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC19B2012177CB79002315F7 /* Debug */,
+				DC19B2022177CB79002315F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
